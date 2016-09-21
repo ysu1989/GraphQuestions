@@ -22,8 +22,6 @@ Here are some example questions and their characteristics (refer to the paper \[
 | - For **Eddard Stark**'s children, how many of them were born in **Winterfell**? <br> - In **Winterfell**, how many children of **Eddard Stark** were born?  <br> - How many children of **Ned Stark** were born in **Winterfell**?  | Fictional Universe | 3 | 2 | count | -23.34 | 1 |
 | - In which month does the average rainfall of **New York City** exceed **86** mm? <br> - Rainfall averages more than **86** mm in **New York City** during which months?  <br> - List the calendar months when **NYC** averages in excess of **86** millimeters of rain?  | Travel | March, August <br> ... | 3 | comparative | -37.84 | 7 |
 
-### Download and Setup
-
 ### Reference
 
 If you use SEMPRE in your work, please cite:
