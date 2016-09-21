@@ -22,15 +22,20 @@ Here are some example questions and their characteristics (refer to the paper \[
 | - For **Eddard Stark**'s children, how many of them were born in **Winterfell**? <br> - In **Winterfell**, how many children of **Eddard Stark** were born?  <br> - How many children of **Ned Stark** were born in **Winterfell**?  | Fictional Universe | 3 | 2 | count | -23.34 | 1 |
 | - In which month does the average rainfall of **New York City** exceed **86** mm? <br> - Rainfall averages more than **86** mm in **New York City** during which months?  <br> - List the calendar months when **NYC** averages in excess of **86** millimeters of rain?  | Travel | March, August <br> ... | 3 | comparative | -37.84 | 7 |
 
-### Dataset Statistics
-
-Please refer to the paper \[1\] for detailed dataset statistics.
-
-### Construction Details
-
-We proposed a semi-automated framework to construct QA datasets with explicitly speficied characteristics from a knowledge base (KB). The current release (v1.0) is constructed from Freebase (June 2013 version). The proposed framework revolves around an intermediate KB-based meaning representation, _graph queries_, which are a subset of lambda calculus with a graph structure. We first automatically generate graph queries with desired characteristics from the given KB, and then employ crowdsourcing to convert the graph queries into natural language questions, thus retaining a high question quality and wording diversity. Please refer to the associated paper [1] for more details.
-
 ### Download and Setup
 
-[1]: bench_paper.pdf
+### Reference
 
+If you use SEMPRE in your work, please cite:
+
+```
+@InProceedings {su2016graphquestions,
+    author    = "Su, Yu and Sun, Huan and Sadler, Brian and Srivatsa, Mudhakar and G{\" u}r, Izzeddin and Yan, Zenghui and Yan, Xifeng",
+    title     = "On Generating Characteristic-rich Question Sets for {QA} Evaluation",
+    booktitle = "Conference on Empirical Methods in Natural Language Processing",
+    year      = "2016",
+    address   = "Austin, Texas, USA",
+    month     = "nov",
+    publisher = "Association for Computational Linguistics"
+}
+```
