@@ -30,7 +30,7 @@ If you use SEMPRE in your work, please cite:
 @InProceedings {su2016graphquestions,
     author    = "Su, Yu and Sun, Huan and Sadler, Brian and Srivatsa, Mudhakar and G{\" u}r, Izzeddin and Yan, Zenghui and Yan, Xifeng",
     title     = "On Generating Characteristic-rich Question Sets for {QA} Evaluation",
-    booktitle = "Conference on Empirical Methods in Natural Language Processing",
+    booktitle = "Empirical Methods in Natural Language Processing (EMNLP)",
     year      = "2016",
     address   = "Austin, Texas, USA",
     month     = "nov",
