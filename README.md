@@ -1,5 +1,19 @@
 ## GraphQuestions: A Characteristic-rich Question Answering Dataset
 
+This is the dataset described in the following EMNLP'16 paper. If you use GraphQuestions in your work, please cite:
+
+```
+@InProceedings {su2016graphquestions,
+    author    = "Su, Yu and Sun, Huan and Sadler, Brian and Srivatsa, Mudhakar and G{\" u}r, Izzeddin and Yan, Zenghui and Yan, Xifeng",
+    title     = "On Generating Characteristic-rich Question Sets for {QA} Evaluation",
+    booktitle = "Empirical Methods in Natural Language Processing (EMNLP)",
+    year      = "2016",
+    address   = "Austin, Texas, USA",
+    month     = "nov",
+    publisher = "Association for Computational Linguistics"
+}
+```
+
 ### Introduction
 
 Natural language question answering (QA), i.e., finding direct answers for natural language questions, is undergoing active development. Questions in real life often present rich _characteristics_, constituting dimensions along which question difficulty varies. The aim of this project is to explore how to construct characteristic-rich QA dataset in a systematic way, and provide the community with a dataset with rich and explicitly specified question characteristics. A dataset like this enables fine-grained evaluation of QA systems, i.e., developers can know exactly on what kind of questions their systems are failing, and improve accordingly.
@@ -22,18 +36,3 @@ Here are some example questions and their characteristics (refer to the paper \[
 | - For **Eddard Stark**'s children, how many of them were born in **Winterfell**? <br> - In **Winterfell**, how many children of **Eddard Stark** were born?  <br> - How many children of **Ned Stark** were born in **Winterfell**?  | Fictional Universe | 3 | 2 | count | -23.34 | 1 |
 | - In which month does the average rainfall of **New York City** exceed **86** mm? <br> - Rainfall averages more than **86** mm in **New York City** during which months?  <br> - List the calendar months when **NYC** averages in excess of **86** millimeters of rain?  | Travel | March, August <br> ... | 3 | comparative | -37.84 | 7 |
 
-### Reference
-
-If you use SEMPRE in your work, please cite:
-
-```
-@InProceedings {su2016graphquestions,
-    author    = "Su, Yu and Sun, Huan and Sadler, Brian and Srivatsa, Mudhakar and G{\" u}r, Izzeddin and Yan, Zenghui and Yan, Xifeng",
-    title     = "On Generating Characteristic-rich Question Sets for {QA} Evaluation",
-    booktitle = "Empirical Methods in Natural Language Processing (EMNLP)",
-    year      = "2016",
-    address   = "Austin, Texas, USA",
-    month     = "nov",
-    publisher = "Association for Computational Linguistics"
-}
-```
