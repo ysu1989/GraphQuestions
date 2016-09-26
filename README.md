@@ -28,7 +28,7 @@ We present GraphQuestions, a QA dataset consisting of a set of _factoid question
 
 ### Example
 
-Here are some example questions and their characteristics (refer to the paper for how the characteristics are defined and quantified). Topic entities are bold-faced. Note how the topic entities and the whole questions are paraphrased:
+Here are some example questions and their characteristics (refer to the paper for the definition of the characteristics). Topic entities are bold-faced. Note how the topic entities and the whole questions are paraphrased:
 
 | Question | Domain | Answer | # of Relations | Function | Commonness | # of Answers |
 | --------------------- | :-------: | :-------: | :-: | :------: | :----: | :-: |
