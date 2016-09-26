@@ -1,6 +1,6 @@
 ## GraphQuestions: A Characteristic-rich Question Answering Dataset
 
-This is the dataset described in the following EMNLP'16 paper. If you use GraphQuestions in your work, please cite:
+This is the dataset described in the following EMNLP'16 paper. If you use this dataset in your work, please cite:
 
 ```
 @InProceedings {su2016graphquestions,
