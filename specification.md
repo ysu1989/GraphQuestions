@@ -1,6 +1,6 @@
 ### Data Format
 
-Each file, graphquestions.[train/test].json, contains an array of JSON objects, each corresponding to a question (not graph query). The detailed format of a question is as follows. Note that if you only use question-answer pairs and not rely on the logic forms, you can ignore "graph_query" and "sparql_query".
+Each file, graphquestions.[train/test].json, contains an array of JSON objects, each corresponding to a question (not graph query). The detailed format of a question is as follows. Note that if you only use question-answer pairs and do not rely on the logic forms, you can ignore "graph_query" and "sparql_query".
 
 - qid: question id. A variable-digit number. The right-most two digits are for entity paraphrases, the middle four digits are for sentence paraphrases, and the rest comprise the id of the corresponding graph query this question is derived from. The questions with the same graph query id therefore are paraphrases.
 - question: the natural language question. Lower-cased
