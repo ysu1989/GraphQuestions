@@ -44,5 +44,5 @@ Please refer to the following paper for more details about the dataset. If you u
 We provide a standard evaluation script which will evaluate the overall performance based on your result file as well as the breakdown performance by question characteristics. Once you get your result file correctly formatted (refer to provided example result files for formatting), you can easily run the evaluation script, e.g.,
 
 ```
-python standard_evaluation.py ./freebase13/results/sempre.res
+python evaluate.py ./freebase13/results/sempre.res
 ```

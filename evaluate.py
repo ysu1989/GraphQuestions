@@ -2,21 +2,24 @@
 
 import json
 import math
+import sys
 import numpy as np
 
-"""
-return a tuple with recall, precision, and f1 for one example
-credit of this function goes to Xuchen Yao
-"""
-def computeF1(goldList, predictedList):
+res_file = sys.argv[1]
 
-  """Assume all questions have at least one answer"""
+def computeF1(goldList, predictedList):
+  '''
+  return a tuple with recall, precision, and f1 for one example
+  credit of this function goes to Xuchen Yao
+  '''
+
+  '''Assume all questions have at least one answer'''
   if len(goldList)==0:
-    raise Exception("gold list may not be empty")
-  """If we return an empty list recall is zero and precision is one"""
+    raise Exception('gold list may not be empty')
+  '''If we return an empty list recall is zero and precision is one'''
   if len(predictedList)==0:
     return (0, 1, 0)
-  """It is guaranteed now that both lists are not empty"""
+  '''It is guaranteed now that both lists are not empty'''
 
   precision = 0
   for entity in predictedList:
@@ -48,16 +51,14 @@ m['precision'] = 8
 m['recall'] = 9
 m['f1'] = 10
 
-res_file = 'jacana.res'
-
-"""Go over all lines and compute recall, precision and F1"""
+# Go over all lines, record information, and compute recall, precision and F1
 res = []
 with open(res_file) as f:
   for line in f:
     if len(line) == 0 or line[0] == '#':
       continue  
 							
-    tokens = line.split("\t")
+    tokens = line.split('\t')
     try:
         qid = long(tokens[m['qid']])    
         time = float(tokens[m['time']])
@@ -85,10 +86,10 @@ def print_result(options):
     
     AND multiple options.
     '''
-    averageRecall=0
-    averagePrecision=0
-    averageF1=0
-    count=0
+    averageRecall = 0
+    averagePrecision = 0
+    averageF1 = 0
+    count = 0
     time = 0
     f1 = []
     for e in res:
@@ -119,7 +120,10 @@ def print_result(options):
         print '\t'.join(['0.0', '0.0', '0.0', '0.0', '0.0', '0.0'])
         
 def print_result_individual(options, fields2print):
-    '''print individual question results'''
+    '''
+    print individual question results
+    '''
+
     for e in res:
         flag = True
         if not len(options) == 0:
@@ -141,26 +145,24 @@ def print_result_individual(options, fields2print):
                 s += str(e[m[field]]) + '\t'
             print s 
  
-#print '------------------overall-------------------'
+#------------------overall-------------------
 print('overall performance')
 options = []
 print_result(options)
-#print '------------------structure_nEdge=1-------------------'
+#------------------structure-------------------
 print('nEdge = 1')
 options = []
 options.append([m['structure'], 1, '=='])
 print_result(options)
-#print '------------------structure_nEdge=2-------------------'
 print('nEdge = 2')
 options = []
 options.append([m['structure'], 2, '=='])
 print_result(options)
-#print '------------------structure_nEdge=3-------------------'
 print('nEdge = 3')
 options = []
 options.append([m['structure'], 3, '=='])
 print_result(options)
-#print '------------------function-------------------'
+#------------------function-------------------
 print('function = none')
 options = []
 options.append([m['function'], 'none', '=='])
@@ -177,7 +179,7 @@ print('function = comparative')
 options = []
 options.append([m['function'], 'comparative', '=='])
 print_result(options)
-#print '------------------answer_cardinality-------------------'
+#------------------answer cardinality-------------------
 print('answer_card = 1')
 options = []
 options.append([m['answer_cardinality'], 1, '=='])
@@ -186,7 +188,7 @@ print('answer_card > 1')
 options = []
 options.append([m['answer_cardinality'], 1, '>'])
 print_result(options)
-#print '------------------commonness-------------------'
+#------------------commonness-------------------
 print('-40 <= commonness < -30')
 options = []
 options.append([m['commonness'], -40, '>='])
@@ -208,7 +210,7 @@ options.append([m['commonness'], -10, '>='])
 options.append([m['commonness'], 0, '<'])
 print_result(options)
 
-## paraphrasing analysis
+#------------------paraphrase-------------------
 def analyze_paraphrasing():
     pmap = {}
     for e in res:
@@ -222,20 +224,20 @@ def analyze_paraphrasing():
     n_max = 0
     for key in pmap.keys():
         pmap.get(key).sort(reverse=True)
-        if size(pmap.get(key)) > n_max:
-            n_max = size(pmap.get(key))
+        if len(pmap.get(key)) > n_max:
+            n_max = len(pmap.get(key))
     
-    for i in range(0,n_max):
+    for i in range(0, n_max):
         f1 = 0
         n = 0
         for key in pmap.keys():
             l = pmap.get(key)
-            if size(l) > i:
+            if len(l) > i:
                 f1 += l[i]
                 n += 1
         if n != 0:
             f1 /= n
         print '\t'.join([str(i), str(n), str(f1)])
-        
+
 print('paraphrasing')
 analyze_paraphrasing()
