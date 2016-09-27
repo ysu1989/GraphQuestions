@@ -1,9 +1,3 @@
-### Run evaluation script
-
-We provide a standard evaluation script which will compute the overall performance of your results as well as the breakdown performance by question characteristics. You need to render your output in the required format (refer to provided result files). Once you get your result file correctly formatted, you can run the script as follows:
-
-python standard_evaluation.py your_result_file
-
 ### Data Format
 
 Each file, graphquestions.[train/test].json, contains an array of JSON objects, each corresponding to a question (not graph query). The detailed format of a question is as follows. Note that if you only use question-answer pairs and not rely on the logic forms, you can ignore "graph_query" and "sparql_query".
