@@ -5,7 +5,7 @@ GraphQuestions is a characteristic-rich dataset for factoid question answering d
 
 Natural language question answering (QA), i.e., finding direct answers for natural language questions, is undergoing active development. Questions in real life often present rich _characteristics_, constituting dimensions along which question difficulty varies. The aim of this project is to explore how to construct characteristic-rich QA dataset in a systematic way, and provide the community with a dataset with rich and explicitly specified question characteristics. A dataset like this enables fine-grained evaluation of QA systems, i.e., developers can know exactly on what kind of questions their systems are failing, and improve accordingly.
 
-We present GraphQuestions, a QA dataset consisting of a set of _factoid questions with ground-truth answers_. The current release (v1.0) of the dataset contains 5,166 questions, which are constructed based on Freebase, a large-scale knowledge base. An array of question characteristics are formalized, and every question in GraphQuestions has an explict specification of characteristics. We have formalized the following characteristics:
+We present GraphQuestions, a QA dataset consisting of a set of _factoid questions with logical forms and ground-truth answers_. The current release (v1.0) of the dataset contains 5,166 questions, which are constructed based on Freebase, a large-scale knowledge base. An array of question characteristics are formalized, and every question has an explict specification of characteristics:
 
 * **Structure Complexity**: the number of relations involved in a question
 * **Function**: Addtional functions like counting or superlatives, e.g., "_How many children of Ned Stark were born in Winterfell?_"
@@ -38,6 +38,12 @@ Please refer to the following paper for more details about the dataset. If you u
     publisher = "Association for Computational Linguistics"
 }
 ```
+
+### Usage
+
+The dataset works the best when the knowledge backend of a QA system is Freebase, because the provided answers are from Freebase. Nevertheless, it can still serve as a useful resource to QA systems based on other knowledge backend like DBpedia or the Web. Also, the dataset can be used to study or learn question paraphrasing.
+
+To set up Freebase and the Virtuoso graph database to store and query Freebase, we refer users to the Sempre project (```https://github.com/percyliang/sempre```), which provides scripts to download Freebase and set up Virtuoso.
 
 ### Evaluation
 
