@@ -15,7 +15,7 @@ We present GraphQuestions, a QA dataset consisting of a set of _factoid question
 
 ### Example
 
-Here are some example questions and their characteristics (refer to the paper for the definition of the characteristics). Topic entities are bold-faced. Note how the topic entities and the whole questions are paraphrased:
+Here are some example questions and their characteristics (refer to the [paper](http://cs.ucsb.edu/~ysu/papers/emnlp16_graphquestions.pdf) and the [appendix](http://cs.ucsb.edu/~ysu/papers/emnlp16_graphquestions_appendix.pdf) for the definition and distribution of question characteristics). Topic entities are bold-faced. Note how the topic entities and the whole questions are paraphrased:
 
 | Question | Domain | Answer | # of Relations | Function | Commonness | # of Answers |
 | --------------------- | :-------: | :-------: | :-: | :------: | :----: | :-: |
