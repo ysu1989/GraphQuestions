@@ -1,5 +1,5 @@
 ## GraphQuestions: A Characteristic-rich Question Answering Dataset
-GraphQuestions is a characteristic-rich dataset for factoid question answering described in the paper "On Generating Characteristic-rich Question Sets for QA Evaluation" - EMNLP'16.
+GraphQuestions is a characteristic-rich dataset for factoid question answering described in the paper "[On Generating Characteristic-rich Question Sets for QA Evaluation](http://cs.ucsb.edu/~ysu/papers/emnlp16_graphquestions.pdf)" - EMNLP'16.
 
 ### Introduction
 
