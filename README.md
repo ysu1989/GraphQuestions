@@ -1,18 +1,5 @@
 ## GraphQuestions: A Characteristic-rich Question Answering Dataset
-
-This is the dataset described in the following EMNLP'16 paper. If you use this dataset in your work, please cite:
-
-```
-@InProceedings {su2016graphquestions,
-    author    = "Su, Yu and Sun, Huan and Sadler, Brian and Srivatsa, Mudhakar and G{\" u}r, Izzeddin and Yan, Zenghui and Yan, Xifeng",
-    title     = "On Generating Characteristic-rich Question Sets for {QA} Evaluation",
-    booktitle = "Empirical Methods in Natural Language Processing (EMNLP)",
-    year      = "2016",
-    address   = "Austin, Texas, USA",
-    month     = "nov",
-    publisher = "Association for Computational Linguistics"
-}
-```
+GraphQuestions is a characteristic-rich dataset for factoid question answering described in the paper "On Generating Characteristic-rich Question Sets for QA Evaluation" - EMNLP'16.
 
 ### Introduction
 
@@ -25,6 +12,21 @@ We present GraphQuestions, a QA dataset consisting of a set of _factoid question
 * **Commonness**: How common a question is, e.g., "_where was Obama born?_" is more common than "_what is the tilt of axis of Polestar?_"
 * **Paraphrasing**: Different natural language expressions of the same question
 * **Answer Cardinality**: The number of answers to a question
+
+
+This is the dataset described in the following paper. If you use this dataset in your work, please cite:
+
+```
+@InProceedings {su2016graphquestions,
+    author    = "Su, Yu and Sun, Huan and Sadler, Brian and Srivatsa, Mudhakar and G{\" u}r, Izzeddin and Yan, Zenghui and Yan, Xifeng",
+    title     = "On Generating Characteristic-rich Question Sets for {QA} Evaluation",
+    booktitle = "Empirical Methods in Natural Language Processing (EMNLP)",
+    year      = "2016",
+    address   = "Austin, Texas, USA",
+    month     = "nov",
+    publisher = "Association for Computational Linguistics"
+}
+```
 
 ### Example
 
