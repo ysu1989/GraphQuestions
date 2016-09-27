@@ -13,8 +13,19 @@ We present GraphQuestions, a QA dataset consisting of a set of _factoid question
 * **Paraphrasing**: Different natural language expressions of the same question
 * **Answer Cardinality**: The number of answers to a question
 
+### Example
 
-This is the dataset described in the following paper. If you use this dataset in your work, please cite:
+Here are some example questions and their characteristics (refer to the paper for the definition of the characteristics). Topic entities are bold-faced. Note how the topic entities and the whole questions are paraphrased:
+
+| Question | Domain | Answer | # of Relations | Function | Commonness | # of Answers |
+| --------------------- | :-------: | :-------: | :-: | :------: | :----: | :-: |
+| - Find terrorist organizations involved in **September 11 attacks**. <br> - Who did **September 11 attacks**?  <br> - The **nine eleven** were carried out with the involvement of what terrorist organizations? | Terrorism | alQaeda | 1 | none | -16.67 | 1 |
+| - For **Eddard Stark**'s children, how many of them were born in **Winterfell**? <br> - In **Winterfell**, how many children of **Eddard Stark** were born?  <br> - How many children of **Ned Stark** were born in **Winterfell**?  | Fictional Universe | 3 | 2 | count | -23.34 | 1 |
+| - In which month does the average rainfall of **New York City** exceed **86** mm? <br> - Rainfall averages more than **86** mm in **New York City** during which months?  <br> - List the calendar months when **NYC** averages in excess of **86** millimeters of rain?  | Travel | March, August <br> ... | 3 | comparative | -37.84 | 7 |
+
+### Reference
+
+Please refer to the following paper for more details about the dataset. If you use this dataset in your work, please cite:
 
 ```
 @InProceedings {su2016graphquestions,
@@ -27,14 +38,4 @@ This is the dataset described in the following paper. If you use this dataset in
     publisher = "Association for Computational Linguistics"
 }
 ```
-
-### Example
-
-Here are some example questions and their characteristics (refer to the paper for the definition of the characteristics). Topic entities are bold-faced. Note how the topic entities and the whole questions are paraphrased:
-
-| Question | Domain | Answer | # of Relations | Function | Commonness | # of Answers |
-| --------------------- | :-------: | :-------: | :-: | :------: | :----: | :-: |
-| - Find terrorist organizations involved in **September 11 attacks**. <br> - Who did **September 11 attacks**?  <br> - The **nine eleven** were carried out with the involvement of what terrorist organizations? | Terrorism | alQaeda | 1 | none | -16.67 | 1 |
-| - For **Eddard Stark**'s children, how many of them were born in **Winterfell**? <br> - In **Winterfell**, how many children of **Eddard Stark** were born?  <br> - How many children of **Ned Stark** were born in **Winterfell**?  | Fictional Universe | 3 | 2 | count | -23.34 | 1 |
-| - In which month does the average rainfall of **New York City** exceed **86** mm? <br> - Rainfall averages more than **86** mm in **New York City** during which months?  <br> - List the calendar months when **NYC** averages in excess of **86** millimeters of rain?  | Travel | March, August <br> ... | 3 | comparative | -37.84 | 7 |
 
