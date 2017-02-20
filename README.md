@@ -45,6 +45,8 @@ The dataset works the best when the knowledge backend of a QA system is Freebase
 
 To set up Freebase and the Virtuoso graph database to store and query Freebase, we refer users to the [Sempre](https://github.com/percyliang/sempre) project, which provides scripts to download Freebase and set up Virtuoso.
 
+Use the standard training/testing split if you would like to compare with other methods.
+
 ### Evaluation
 
 We provide a standard evaluation script which will evaluate the overall performance based on your result file as well as the breakdown performance by question characteristics. Once you get your result file correctly formatted (refer to provided example result files for formatting), you can easily run the evaluation script, e.g.,
