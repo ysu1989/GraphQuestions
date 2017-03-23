@@ -43,7 +43,7 @@ Please refer to the following paper for more details about the dataset. If you u
 
 The dataset works the best when the knowledge backend of a QA system is Freebase, because the provided answers are from Freebase. Nevertheless, it can still serve as a useful resource to QA systems based on other knowledge backend like DBpedia or the Web. Also, the dataset can be used to study or learn question paraphrasing.
 
-To set up a database to store and query Freebase, we refer users to the [FastRDFStore] (https://github.com/Microsoft/FastRDFStore/) project or the [Sempre](https://github.com/percyliang/sempre) project.
+To set up a database to store and query Freebase, we refer users to the [FastRDFStore](https://github.com/Microsoft/FastRDFStore/) project or the [Sempre](https://github.com/percyliang/sempre) project.
 
 Use the standard training/testing split if you would like to compare with other methods.
 
