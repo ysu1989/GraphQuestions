@@ -1,6 +1,8 @@
 ## GraphQuestions: A Characteristic-rich Question Answering Dataset
 GraphQuestions is a characteristic-rich dataset for factoid question answering described in the paper "[On Generating Characteristic-rich Question Sets for QA Evaluation](http://cs.ucsb.edu/~ysu/papers/emnlp16_graphquestions.pdf)" - EMNLP'16.
 
+**An updated version of this dataset that is based on the lastest version of Freebase can be found under the [ArcaneQA](https://github.com/dki-lab/GrailQA/tree/main/data) repo. You are encouraged to use the updated version.**
+
 ### Introduction
 
 Natural language question answering (QA), i.e., finding direct answers for natural language questions, is undergoing active development. Questions in real life often present rich _characteristics_, constituting dimensions along which question difficulty varies. The aim of this project is to explore how to construct characteristic-rich QA dataset in a systematic way, and provide the community with a dataset with rich and explicitly specified question characteristics. A dataset like this enables fine-grained evaluation of QA systems, i.e., developers can know exactly on what kind of questions their systems are failing, and improve accordingly.
